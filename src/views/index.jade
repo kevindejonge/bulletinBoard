@@ -1,0 +1,12 @@
+html
+	head
+	body
+		a(href='/') home
+		br
+		a(href='users/messagetable')     Make Message NOW!
+
+		h2 messages
+		each message in messages
+			ul 
+				li title: #{message.title} 
+				li body: #{message.body}

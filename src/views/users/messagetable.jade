@@ -1,0 +1,43 @@
+html
+	head
+		script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js')
+
+	
+	body
+		a(href='/') home
+		br
+		br
+		br
+		br
+		form(id ="messagetable" action='./messagetable' method='post')
+			
+			input(placeholder ="titel" name='titeltje' style = "width: 300px;")
+			//- p#list
+			br
+			textarea(placeholder = "body" name='bodietje' style = "width: 300px; height: 300px")
+			input(type='submit' value='Send')
+			br
+		
+
+
+		//- script.
+		//- 	var timer;
+		//- 	$("#firstname").keyup(function(){
+		//- 		var fileData = {
+		//- 			firstname : $("#firstname").val()
+		//- 			}
+		//- 		clearTimeout(timer);
+
+		//- 		$('#list').empty();
+		//- 		timer = setTimeout(function() {
+		//- 		$.post("/users/searchbar", fileData,function(response, textStatus) {
+
+		//- 			for(i = 0; i < response.object.length; i++) {
+					
+		//- 				$('#list').append("<p id=" + i + ">" + response.object[i] + "</p>");
+		//- 				}			
+		//- 			});
+		//- 		},300)
+		//- 	});
+			
+				
